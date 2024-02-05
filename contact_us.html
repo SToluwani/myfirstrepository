@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        body{
+            background-color:peachpuff;
+        }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h2{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 19px;
+            color:purple;
+        }
+
+        li{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color:blue;
+        }
+        label{
+            font-family: 'Courier New', Courier, monospace;
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to my Portfolio Form!</h1>
+    <h2>If you have a question please leave it in the message box below</h2>
+    <h2>Please ensure to correctly input your:</h2>
+        <li>Name</li>
+        <li>Phone Number</li>
+        <li>Email</li> 
+        <h2>This is for proper tracking purposes. Thank You!</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="apikey" value="2fcdcc13-53d5-4972-85d1-7eaae198fa5d">
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name"><br><br>
+       <label for="Phone">Phone Number:</label>
+       <input type="text" id="phone" name="phone"><br><br>
+       <label for="Email">Email:</label>
+       <input type="text" id="email" name="email"><br><br>
+       <label for="message">Message:</label>
+       <textarea id="message" name="message"></textarea><br><br>
+       <input type="submit" value="Send">
+    </form>
+</body>
+</html>
